@@ -1,5 +1,8 @@
 /** @jsx createVNode */
 import { createVNode } from "../lib";
+import { globalStore } from "../stores";
+import { userStorage } from "../storages";
+import { router } from "../main";
 const USERNAME_INPUT_ID = "username";
 
 const login = (username) => {

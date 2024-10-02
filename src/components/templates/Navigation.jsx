@@ -10,11 +10,11 @@ export const Navigation = ({ loggedIn }) => {
     <nav className="bg-white shadow-md p-2 sticky top-14">
       <ul className="flex justify-around">
         <li>
-          <a href="/" className="${getNavItemClass('/')}" data-link>
+          <a href="/" className={getNavItemClass("/")} data-link>
             홈
           </a>
         </li>
-        $
+
         {!loggedIn ? (
           <li>
             <a href="/login" className={getNavItemClass("/login")} data-link>
@@ -24,7 +24,7 @@ export const Navigation = ({ loggedIn }) => {
         ) : (
           ""
         )}
-        $
+
         {loggedIn ? (
           <li>
             <a
@@ -38,7 +38,7 @@ export const Navigation = ({ loggedIn }) => {
         ) : (
           ""
         )}
-        $
+
         {loggedIn ? (
           <li>
             <a href="#" id="logout" class="text-gray-600">
